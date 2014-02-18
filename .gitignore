@@ -1,0 +1,14 @@
+*.omc
+.omakedb*
+safefree
+*.cmi
+*.cmo
+*.cmx
+*.run
+*.opt
+src/parser.ml
+src/parser.mli
+src/lexer.ml
+parser.output
+.ht*
+test.ml

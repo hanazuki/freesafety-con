@@ -1,0 +1,26 @@
+FILES[] =
+	listSet
+	syntax
+	env
+	parser
+	lexer
+	simpleType
+	procurableEnv
+	typing
+	print
+	main
+
+PROGRAM = safefree
+
+GENERATED_FILES[] =
+	lexer.ml
+	parser.mli
+	parser.ml
+
+OCamlGeneratedFiles($(GENERATED_FILES))
+
+all: $(OCamlProgram $(PROGRAM), $(FILES))
+
+clean:
+	rm -f $(GENERATED_FILES)
+	rm -f *~ *.opt *.cmi *.cmx *.cmo *.cma *.cmxa *.o *.omc
